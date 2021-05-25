@@ -13,7 +13,7 @@ phases:
       - add-apt-repository ppa:deadsnakes/ppa
       - apt-get -y install python3.5 python3.5-dev jq
       - curl https://bootstrap.pypa.io/ez_setup.py -o - | python3.5
-      - easy_install pip
+      - python3 get-pip.py
       - pip3 install --upgrade awscli
       - ln -sf /usr/bin/python3.5 /usr/local/bin/python3
   pre_build:
